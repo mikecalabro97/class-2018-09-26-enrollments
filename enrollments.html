@@ -128,7 +128,25 @@ $(document).ready(function () {
 </div>
 
 
+<pre class="r"><code>x &lt;- read_rds(&quot;enrollment.rds&quot;)
 
+x %&gt;%
+  arrange(desc(total)) %&gt;%
+  select(course_name, u_grad)</code></pre>
+<pre><code>## # A tibble: 2,751 x 2
+##    course_name                    u_grad
+##    &lt;chr&gt;                           &lt;dbl&gt;
+##  1 &lt;NA&gt;                            26963
+##  2 Intro to Computer Science         726
+##  3 The Ancient Greek Hero            629
+##  4 Principles of Economics           587
+##  5 Introduction to Probability       510
+##  6 Classic Chnse Ethical &amp; Pol Th    431
+##  7 Intro to Life Sciences I          351
+##  8 Madness and Medicine              328
+##  9 A Libertarian Perspective         294
+## 10 Multivariable Calculus            272
+## # ... with 2,741 more rows</code></pre>
 
 
 
